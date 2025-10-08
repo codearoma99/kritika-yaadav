@@ -34,8 +34,8 @@ const ContactPage = () => {
                 <div className="max-w-7xl mx-auto px-4">
                     <div className="flex justify-center">
                     <div className="text-center w-full">
-                        <h2 className="text-4xl md:text-5xl font-bold text-white">Contact Us</h2>
-                        <div className="my-6"></div>
+                        <h2 className="text-4xl md:text-5xl font-bold text-white mobile_ft">Contact Us</h2>
+                         <div className="my-6 mobile_mb-0"></div>
                         <a
                         href="/"
                         className=" text-lg inline-flex items-center gap-2 hover:text-white text-white"
@@ -51,7 +51,7 @@ const ContactPage = () => {
               <div className="container">
               <div className="row py-16">
                 {/* Call Us Box */}
-                <div className="col-lg-4 col-md-6">
+                <div className="col-lg-4 col-md-6 mt-3">
                   <div className="contact-bottom-box">
                     <div className="contact-box">
                       <div className="icons">
@@ -76,7 +76,7 @@ const ContactPage = () => {
                 </div>
 
                 {/* Mail Box */}
-                <div className="col-lg-4 col-md-6">
+                <div className="col-lg-4 col-md-6 mt-3">
                   <div className="contact-bottom-box">
                     <div className="contact-box">
                       <div className="icons">
@@ -101,7 +101,7 @@ const ContactPage = () => {
                 </div>
 
                 {/* Address Box */}
-                <div className="col-lg-4 col-md-6">
+                <div className="col-lg-4 col-md-6 mt-3">
                   <div className="contact-bottom-box">
                     <div className="contact-box">
                       <div className="icons">

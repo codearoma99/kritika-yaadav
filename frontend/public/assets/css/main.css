@@ -15506,18 +15506,69 @@ header.bg-white.fixed.w-full.z-100.shadow-sm {
   padding-right: 20px;
   font-size: 25px;
 }
+.button-col-cta {
+    display: flex;
+    gap: 30px;
+}
+
 /*============= PRICING CSS AREA ===============*//*# sourceMappingURL=main.css.map */
 
 /* ================== Admin CSS Start ================== */
 
 
 /*===Reponsive CSS==*/
-@media (max-width: 991px) {
+@media (max-width: 767px) {
+
   h1.text-anime-style-3.hero-section-heading.aos-init.aos-animate
   {
-    font-size: 20px !important;
-    line-height: 25px;    
+    font-size: 25px;
+    line-height: 33px;
   }
+  .py-16 {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important; 
+  }
+  .bg-center.bg-no-repeat.bg-cover.py-20 {
+    padding-top: 100px !important;
+    padding-bottom: 30px !important;
+  }
+  h2.mobile_ft {
+    font-size: 30px;
+  }
+  .my-6.mobile_mb-0 {
+      margin-top: 3px;
+      margin-bottom: 0;
+  }
+  .cta-header h2 {
+    font-size: 30px !important;
+    margin-bottom: 15px;
+  }
+  .button-col-cta {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  p.cta-phone
+  {
+    font-size: 18px;
+  }
+  .contact-page-gmap,
+  .cta1-section-area.py-16.relative {
+    margin-bottom: 50px;
+  }
+  .contact2-section-area .contact-main-boxarea h4 {
+    font-size: 25px;
+    line-height: 29px;
+  }
+}
+
+
+@media (max-width: 1279px) {
+  .mobile_menu
+  {
+  justify-content: space-between;
+  }
+    
 }
 
 

@@ -99,7 +99,7 @@ const RegisterPage = () => {
           <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
             {/* Header with gradient */}
             <div className="bg-gradient-to-r from-indigo-600 to-purple-600 py-8 px-8 text-center">
-              <h2 className="text-3xl font-bold text-white">Create Account</h2>
+              <h2 className="text-3xl font-bold text-white mobile_ft">Create Account</h2>
               <p className="text-indigo-100 mt-2">Join us today and start your journey</p>
             </div>
 

@@ -282,7 +282,7 @@ const CartPage = () => {
           <div className="max-w-7xl mx-auto px-4">
             <div className="flex justify-center">
               <div className="text-center w-full">
-                <h2 className="text-4xl md:text-5xl font-bold text-white">Cart</h2>
+                <h2 className="text-4xl md:text-5xl font-bold text-white mobile_ft">Cart</h2>
                 <a href="/" className="text-lg inline-flex items-center gap-2 text-white mt-4">
                   Home <i className="fa-solid fa-angle-right"></i> Cart
                 </a>

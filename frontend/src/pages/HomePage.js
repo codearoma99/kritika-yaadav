@@ -158,71 +158,73 @@ useEffect(() => {
                             <div className="carousel-item">
                             <div className="row align-items-center">
                                 <div className="col-lg-6" data-aos="fade-right" data-aos-delay="100">
-                                <div className="heading-area">
-                                    <h5 data-aos="fade-left" data-aos-delay="200">
-                                    {content.slider2_title}
-                                    </h5>
-                                    <div className="space20" data-aos="fade" data-aos-delay="250"></div>
-                                    <h1
-                                    className="text-anime-style-3 hero-section-heading"
-                                    data-aos="fade-up"
-                                    data-aos-delay="100"
-                                    >
-                                    {content.slider2_subtitle}
-                                    </h1>
+                                    <div className="heading-area">
+                                        <h5 data-aos="fade-left" data-aos-delay="200">
+                                        {content.slider2_title}
+                                        </h5>
+                                        <div className="space20" data-aos="fade" data-aos-delay="250"></div>
+                                        <h1
+                                        className="text-anime-style-3 hero-section-heading"
+                                        data-aos="fade-up"
+                                        data-aos-delay="100"
+                                        >
+                                        {content.slider2_subtitle}
+                                        </h1>
 
-                                    <div className="hero-images-area block lg:hidden">
-                                        <div className="img1 aniamtion-key-1" data-aos="fade-up" data-aos-delay="750">
-                                        {/* Dynamic slider2 image */}
-                                        <img
-                                            src={content.slider2_image ? `http://localhost:5000/uploads/content/${content.slider2_image}` : 'assets/img/all-images/hero/hero-img1.png'}
-                                            alt={content.slider2_title || 'Slider 2 Image'}
-                                        />
+                                        <div className="hero-images-area  block lg:hidden">
+                                            <div className="img1 aniamtion-key-1" data-aos="fade-up" data-aos-delay="750">
+                                            {/* Dynamic slider2 image */}
+                                            <img
+                                                src={content.slider2_image ? `http://localhost:5000/uploads/content/${content.slider2_image}` : 'assets/img/all-images/hero/hero-img1.png'}
+                                                alt={content.slider2_title || 'Slider 2 Image'}
+                                            />
+                                            </div>
+                                            <img
+                                            src="assets/img/elements/elements1.png"
+                                            alt=""
+                                            className="elements1"
+                                            data-aos="fade-down"
+                                            data-aos-delay="800"
+                                            />
+                                            <img
+                                            src="assets/img/elements/elements2.png"
+                                            alt=""
+                                            className="elements2 aniamtion-key-4"
+                                            data-aos="fade-right"
+                                            data-aos-delay="850"
+                                            />
+                                            <img
+                                            src="assets/img/elements/elements3.png"
+                                            alt=""
+                                            className="elements3 aniamtion-key-1"
+                                            data-aos="fade-left"
+                                            data-aos-delay="900"
+                                            />
                                         </div>
-                                        <img
-                                        src="assets/img/elements/elements1.png"
-                                        alt=""
-                                        className="elements1"
-                                        data-aos="fade-down"
-                                        data-aos-delay="800"
-                                        />
-                                        <img
-                                        src="assets/img/elements/elements2.png"
-                                        alt=""
-                                        className="elements2 aniamtion-key-4"
-                                        data-aos="fade-right"
-                                        data-aos-delay="850"
-                                        />
-                                        <img
-                                        src="assets/img/elements/elements3.png"
-                                        alt=""
-                                        className="elements3 aniamtion-key-1"
-                                        data-aos="fade-left"
-                                        data-aos-delay="900"
-                                        />
-                                    </div>
 
-                                    <div className="space20" data-aos="fade" data-aos-delay="350"></div>
-                                    <p data-aos="fade-left" data-aos-delay="100" data-aos-duration="800">
-                                    {content.slider2_content}
-                                    </p>
-                                    <div className="space32" data-aos="fade" data-aos-delay="450"></div>
-                                    <div className="btn-area1" data-aos="fade-up" data-aos-delay="500">
-                                    {content.slider2_button1 && content.slider2_button1_link && (
-                                        <a href={content.slider2_button1_link} className="vl-btn1" data-aos="zoom-in">
-                                        {content.slider2_button1}
-                                        </a>
-                                    )}
-                                    {content.slider2_button2 && content.slider2_button2_link && (
-                                        <a href={content.slider2_button2_link} className="vl-btn1 btn2" data-aos="zoom-in">
-                                        {content.slider2_button2}
-                                        </a>
-                                    )}
+
+
+                                        <div className="space20" data-aos="fade" data-aos-delay="350"></div>
+                                        <p data-aos="fade-left" data-aos-delay="100" data-aos-duration="800">
+                                        {content.slider2_content}
+                                        </p>
+                                        <div className="space32" data-aos="fade" data-aos-delay="450"></div>
+                                        <div className="btn-area1" data-aos="fade-up" data-aos-delay="500">
+                                        {content.slider2_button1 && content.slider2_button1_link && (
+                                            <a href={content.slider2_button1_link} className="vl-btn1" data-aos="zoom-in">
+                                            {content.slider2_button1}
+                                            </a>
+                                        )}
+                                        {content.slider2_button2 && content.slider2_button2_link && (
+                                            <a href={content.slider2_button2_link} className="vl-btn1 btn2" data-aos="zoom-in">
+                                            {content.slider2_button2}
+                                            </a>
+                                        )}
+                                        </div>
                                     </div>
                                 </div>
-                                </div>
 
-                                <div className="col-lg-6 hidden lg:block" data-aos="zoom-in" data-aos-delay="700" data-aos-duration="1000">
+                                <div className="col-lg-6  hidden lg:block" data-aos="zoom-in" data-aos-delay="700" data-aos-duration="1000">
                                     <div className="hero-images-area">
                                         <div className="img1 aniamtion-key-1" data-aos="fade-up" data-aos-delay="750">
                                         {/* Dynamic slider2 image */}
@@ -278,29 +280,42 @@ useEffect(() => {
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-lg-6">
-                        <div className="about-images-area">
-                            <div className="img1">
-                            <img
-                                src={content.about_image_home ? `http://localhost:5000/uploads/content/${content.about_image_home}` : "assets/img/all-images/about/about-img1.png"}
-                                alt="About Image"
-                            />
+
+                            <div className="about-heading heading1 block lg:hidden mb-5 lg:mb-0">
+                                <h5 data-aos="fade-left" data-aos-duration="800">
+                                About Kritika Yadav
+                                </h5>
+                                <div className="space16"></div>
+                                <h2 className="text-anime-style-3">
+                                {content.about_title || "Empowering India's Financial Future, One Investor at a Time"}
+                                </h2>
                             </div>
-                            <img
-                            src="assets/img/elements/elements6.png"
-                            alt=""
-                            className="elements6 aniamtion-key-1"
-                            />
-                        </div>
+
+                            <div className="about-images-area">
+                                <div className="img1">
+                                <img
+                                    src={content.about_image_home ? `http://localhost:5000/uploads/content/${content.about_image_home}` : "assets/img/all-images/about/about-img1.png"}
+                                    alt="About Image"
+                                />
+                                </div>
+                                <img
+                                src="assets/img/elements/elements6.png"
+                                alt=""
+                                className="elements6 aniamtion-key-1"
+                                />
+                            </div>
                         </div>
                         <div className="col-lg-6">
                         <div className="about-heading heading1">
-                            <h5 data-aos="fade-left" data-aos-duration="800">
-                            About Kritika Yadav
-                            </h5>
-                            <div className="space16"></div>
-                            <h2 className="text-anime-style-3">
-                            {content.about_title || "Empowering India's Financial Future, One Investor at a Time"}
-                            </h2>
+                            <div className="hidden lg:block">
+                                <h5 data-aos="fade-left" data-aos-duration="800">
+                                About Kritika Yadav
+                                </h5>
+                                <div className="space16"></div>
+                                <h2 className="text-anime-style-3">
+                                {content.about_title || "Empowering India's Financial Future, One Investor at a Time"}
+                                </h2>
+                            </div>
                             <div className="space16"></div>
                             <p data-aos="fade-left" data-aos-duration="900">
                             {content.about_content || "Default about content goes here..."}

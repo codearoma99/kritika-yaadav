@@ -28,8 +28,8 @@ const CalculatorPage = () => {
             <div className="max-w-7xl mx-auto px-4">
               <div className="flex justify-center">
                 <div className="text-center w-full">
-                  <h2 className="text-4xl md:text-5xl font-bold text-white">Calculators</h2>
-                  <div className="my-6"></div>
+                  <h2 className="text-4xl md:text-5xl font-bold text-white mobile_ft">Calculators</h2>
+                   <div className="my-6 mobile_mb-0"></div>
                   <a
                     href="/"
                     className=" text-lg inline-flex items-center gap-2 hover:text-white text-white"

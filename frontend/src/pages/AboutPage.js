@@ -35,8 +35,8 @@ const AboutPage = () => {
                 <div className="max-w-7xl mx-auto px-4">
                   <div className="flex justify-center">
                     <div className="text-center w-full">
-                      <h2 className="text-4xl md:text-5xl font-bold text-white">About Us</h2>
-                      <div className="my-6"></div>
+                      <h2 className="text-4xl md:text-5xl font-bold text-white mobile_ft">About Us</h2>
+                      <div className="my-6 mobile_mb-0"></div>
                       <a
                         href="/"
                         className=" text-lg inline-flex items-center gap-2 hover:text-white text-white"
@@ -60,6 +60,31 @@ const AboutPage = () => {
                         {content.about_title || "Empowering India's Financial Future, One Investor at a Time"}
                       </h2>
                       <div className="space16"></div>
+
+                      <div className="about-images-area mb-3 block lg:hidden">
+                        <div className="row">
+                          <div className="col-lg-12">
+                            <div className="img2">
+                              <img
+                                src={content.about_image1 ? `http://localhost:5000/uploads/content/${content.about_image1}` : "assets/img/all-images/about/about-img9.png"}
+                                alt="About Image 1"
+                              />
+                            </div>
+                          </div>
+
+                          <div className="col-lg-12">
+                            <div className="space30"></div>
+                            <div className="img1">
+                              <img
+                                src={content.about_image2 ? `http://localhost:5000/uploads/content/${content.about_image2}` : "assets/img/all-images/about/about-img11.png"}
+                                alt="About Image 2"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+
                       <p data-aos="fade-left" data-aos-duration="900">
                         {content.about_content || "Kritika Yadav, CFP® (USA), is a pioneering force in India’s financial education..."}
                       </p>
@@ -83,7 +108,7 @@ const AboutPage = () => {
                       <div className="space32"></div>
 
                       {/* Box 2 */}
-                      <div className="pera-box" data-aos="fade-left" data-aos-duration="1000">
+                      <div className="pera-box hidden" data-aos="fade-left" data-aos-duration="1000">
                         <div className="icons">
                           <img
                             src={content.about_box_icon2 ? `/assets/img/icons/about-icon2.svg` : "assets/img/icons/about-icon2.svg"}
@@ -102,7 +127,7 @@ const AboutPage = () => {
                   </div>
 
                   {/* Right Column (Images) */}
-                  <div className="col-lg-5">
+                  <div className="col-lg-5 hidden lg:block">
                     <div className="about-images-area">
                       <div className="row">
                         <div className="col-lg-12">
@@ -136,6 +161,18 @@ const AboutPage = () => {
                   <div className="row align-items-center">
                     {/* Left Images */}
                     <div className="col-lg-6">
+
+                      <div className="heading1 block lg:hidden">
+                        <h5 data-aos="fade-left" data-aos-duration="800" className="text-base font-medium text-gray-600 mb-4">
+                          Why Choose Kritika Yadav
+                        </h5>
+
+                        <h2 className="text-anime-style-3 text-3xl md:text-4xl font-bold text-gray-800 leading-snug mb-6">
+                          {content.whychoose_title || "Transforming Financial Literacy Across India"}
+                        </h2>
+                      </div>
+
+
                       <div className="about-images-area position-relative">
                         <img src="assets/img/elements/elements40.png" alt="" className="elements18 d-none" />
                         <div className="img1 text-end">
@@ -154,6 +191,8 @@ const AboutPage = () => {
                     {/* Right Content */}
                     <div className="w-full lg:w-1/2 px-4">
                       <div className="heading1">
+                        <div className='hidden lg:block'>
+
                         <h5 data-aos="fade-left" data-aos-duration="800" className="text-base font-medium text-gray-600 mb-4">
                           Why Choose Kritika Yadav
                         </h5>
@@ -161,6 +200,7 @@ const AboutPage = () => {
                         <h2 className="text-anime-style-3 text-3xl md:text-4xl font-bold text-gray-800 leading-snug mb-6">
                           {content.whychoose_title || "Transforming Financial Literacy Across India"}
                         </h2>
+                        </div>
 
                         <p data-aos="fade-left" data-aos-duration="900" className="text-gray-700 mb-2">
                           {content.whychoose_para1}
@@ -208,7 +248,7 @@ const AboutPage = () => {
                 </div>
               </div>
               
-                <div className="team1-section-area py-16"style={{ backgroundImage: 'url("")' }}>
+                <div className="d-none team1-section-area py-16"style={{ backgroundImage: 'url("")' }}>
                         <div className="container mx-auto px-4">
                             <div className="text-center mb-12 heading1">
                                 <h5 data-aos="fade-left" data-aos-duration="800">OUR Team</h5><br></br>

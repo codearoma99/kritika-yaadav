@@ -40,13 +40,13 @@ const ProjectSection = () => {
         {/* Carousel + Image Row */}
         <div className="flex flex-col lg:flex-row items-center gap-10">
           {/* Testimonial Carousel */}
-          <div className="w-full lg:w-1/2 relative overflow-hidden px-4 py-8">
+          <div className="w-full lg:w-1/2 relative overflow-hidden px-4 py-8 md:px-0">
             <div
               className="flex transition-transform duration-500 ease-out"
               style={{ transform: `translateX(-${activeSlide * 100}%)` }}
             >
               {testimonials.map((testimonial, index) => (
-                <div key={index} className="min-w-full px-4">
+                <div key={index} className="min-w-full px-4 md:px-0">
                   <div className="rounded-xl shadow-sm p-10 border border-gray-100 hover:border-yellow-100 transition-all position-relative">
                     <img src="/assets/img/all-images/bg/feature-one-shape-1.png" alt="" className="absolute top-0 right-0 testimonial-img" />
                     {/* Testimonial Header */}

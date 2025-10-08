@@ -242,7 +242,7 @@ const PackageDetails = () => {
     <div className="min-h-screen flex items-center justify-center">
       <div className="text-center p-10 bg-red-50 rounded-lg max-w-md">
         <div className="text-red-600 text-5xl mb-4">⚠️</div>
-        <h2 className="text-2xl font-bold text-red-800 mb-2">Error Loading Package</h2>
+        <h2 className="text-2xl font-bold text-red-800 mb-2 mobile_ft">Error Loading Package</h2>
         <p className="text-red-600 mb-4">{error}</p>
         <button 
           onClick={() => window.location.reload()} 
@@ -287,7 +287,7 @@ const PackageDetails = () => {
               <div className="flex justify-center">
                 <div className="text-center w-full">
                   <h2 className="text-4xl md:text-5xl font-bold text-white">{pkg.title}</h2>
-                  <div className="my-6"></div>
+                   <div className="my-6 mobile_mb-0"></div>
                   <a
                     href="/"
                     className=" text-lg inline-flex items-center gap-2 hover:text-white text-white"
