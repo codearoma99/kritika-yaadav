@@ -18,7 +18,7 @@ const Footer = () => {
       <div className="cta1-section-area py-16 relative">
                 <div className="container mx-auto px-4">
                     <div className="row">
-                      <div className="col-md-6">
+                      <div className="col-lg-6 col-md-12">
                           <div className="cta-header">
                           <h2 className="text-3xl md:text-4xl font-bold text-anime-style-3">
                               Connect with Us for Smarter Investments!
@@ -26,8 +26,8 @@ const Footer = () => {
                        
                           </div>
                       </div>
-                      <div className="col-md-6">
-                        <div className="w-100 h-100 button-col-cta">
+                      <div className="col-lg-6 col-md-12">
+                        <div className="button-col-cta">
                           <p className="cta-phone"><i className="fa-solid fa-phone-volume"></i>+91 9319745996</p>
                           <a
                           href="/contact"
@@ -160,9 +160,7 @@ const Footer = () => {
                   <p>For Grievances: <a href="https://scores.sebi.gov.in" className="underline hover:text-yellow-400" target="_blank" rel="noopener noreferrer">SEBI SCORES Portal</a> | SEBI Helpline: 1800-22-7575</p>
                 </div>
 
-              </div>
-
-                
+              </div>                
 
                 
 

@@ -82,7 +82,7 @@ const Header = () => {
   return (
     <header className="bg-white fixed w-full z-50 shadow-sm" style={{ zIndex: 999999999999 }}>
       <div className="container mx-auto px-4">
-        <div className="flex items-center">
+        <div className="flex items-center mobile_menu">
           {/* Logo */}
           <div className="w-1/4 md:w-auto">
             <Link to="/" className="block">
