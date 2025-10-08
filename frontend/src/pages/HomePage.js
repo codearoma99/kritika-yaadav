@@ -50,7 +50,7 @@ useEffect(() => {
                     <div id="heroCarousel" className="carousel slide" data-bs-ride="carousel">
                         <div className="carousel-inner">
                             {/* Slide 1 - Your original content */}
-                            <div className="carousel-item active abc">
+                            <div className="carousel-item active">
                                 <div className="row align-items-center">
                                     <div className="col-lg-6" data-aos="fade-right" data-aos-delay="100">
                                         <div className="heading-area">
