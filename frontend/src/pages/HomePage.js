@@ -56,9 +56,7 @@ useEffect(() => {
                                         <div className="heading-area">
                                             <h5 data-aos="fade-left" data-aos-delay="200">
                                             {content.slider1_title}
-                                            </h5>
-
-                                        
+                                            </h5>                                        
 
                                             <div className="space20" data-aos="fade" data-aos-delay="250"></div>
                                             <h1
@@ -172,6 +170,38 @@ useEffect(() => {
                                     >
                                     {content.slider2_subtitle}
                                     </h1>
+
+                                    <div className="hero-images-area block lg:hidden">
+                                        <div className="img1 aniamtion-key-1" data-aos="fade-up" data-aos-delay="750">
+                                        {/* Dynamic slider2 image */}
+                                        <img
+                                            src={content.slider2_image ? `http://localhost:5000/uploads/content/${content.slider2_image}` : 'assets/img/all-images/hero/hero-img1.png'}
+                                            alt={content.slider2_title || 'Slider 2 Image'}
+                                        />
+                                        </div>
+                                        <img
+                                        src="assets/img/elements/elements1.png"
+                                        alt=""
+                                        className="elements1"
+                                        data-aos="fade-down"
+                                        data-aos-delay="800"
+                                        />
+                                        <img
+                                        src="assets/img/elements/elements2.png"
+                                        alt=""
+                                        className="elements2 aniamtion-key-4"
+                                        data-aos="fade-right"
+                                        data-aos-delay="850"
+                                        />
+                                        <img
+                                        src="assets/img/elements/elements3.png"
+                                        alt=""
+                                        className="elements3 aniamtion-key-1"
+                                        data-aos="fade-left"
+                                        data-aos-delay="900"
+                                        />
+                                    </div>
+
                                     <div className="space20" data-aos="fade" data-aos-delay="350"></div>
                                     <p data-aos="fade-left" data-aos-delay="100" data-aos-duration="800">
                                     {content.slider2_content}
@@ -192,37 +222,37 @@ useEffect(() => {
                                 </div>
                                 </div>
 
-                                <div className="col-lg-6" data-aos="zoom-in" data-aos-delay="700" data-aos-duration="1000">
-                                <div className="hero-images-area">
-                                    <div className="img1 aniamtion-key-1" data-aos="fade-up" data-aos-delay="750">
-                                    {/* Dynamic slider2 image */}
-                                    <img
-                                        src={content.slider2_image ? `http://localhost:5000/uploads/content/${content.slider2_image}` : 'assets/img/all-images/hero/hero-img1.png'}
-                                        alt={content.slider2_title || 'Slider 2 Image'}
-                                    />
+                                <div className="col-lg-6 hidden lg:block" data-aos="zoom-in" data-aos-delay="700" data-aos-duration="1000">
+                                    <div className="hero-images-area">
+                                        <div className="img1 aniamtion-key-1" data-aos="fade-up" data-aos-delay="750">
+                                        {/* Dynamic slider2 image */}
+                                        <img
+                                            src={content.slider2_image ? `http://localhost:5000/uploads/content/${content.slider2_image}` : 'assets/img/all-images/hero/hero-img1.png'}
+                                            alt={content.slider2_title || 'Slider 2 Image'}
+                                        />
+                                        </div>
+                                        <img
+                                        src="assets/img/elements/elements1.png"
+                                        alt=""
+                                        className="elements1"
+                                        data-aos="fade-down"
+                                        data-aos-delay="800"
+                                        />
+                                        <img
+                                        src="assets/img/elements/elements2.png"
+                                        alt=""
+                                        className="elements2 aniamtion-key-4"
+                                        data-aos="fade-right"
+                                        data-aos-delay="850"
+                                        />
+                                        <img
+                                        src="assets/img/elements/elements3.png"
+                                        alt=""
+                                        className="elements3 aniamtion-key-1"
+                                        data-aos="fade-left"
+                                        data-aos-delay="900"
+                                        />
                                     </div>
-                                    <img
-                                    src="assets/img/elements/elements1.png"
-                                    alt=""
-                                    className="elements1"
-                                    data-aos="fade-down"
-                                    data-aos-delay="800"
-                                    />
-                                    <img
-                                    src="assets/img/elements/elements2.png"
-                                    alt=""
-                                    className="elements2 aniamtion-key-4"
-                                    data-aos="fade-right"
-                                    data-aos-delay="850"
-                                    />
-                                    <img
-                                    src="assets/img/elements/elements3.png"
-                                    alt=""
-                                    className="elements3 aniamtion-key-1"
-                                    data-aos="fade-left"
-                                    data-aos-delay="900"
-                                    />
-                                </div>
                                 </div>
                             </div>
                             </div>
