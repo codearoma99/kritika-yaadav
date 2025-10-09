@@ -15509,8 +15509,8 @@ header.bg-white.fixed.w-full.z-100.shadow-sm {
 .button-col-cta {
     display: flex;
     gap: 30px;
+    justify-content: space-around;
 }
-
 /*============= PRICING CSS AREA ===============*//*# sourceMappingURL=main.css.map */
 
 /* ================== Admin CSS Start ================== */
@@ -15560,8 +15560,21 @@ header.bg-white.fixed.w-full.z-100.shadow-sm {
     font-size: 25px;
     line-height: 29px;
   }
-}
 
+}
+@media (max-width: 991px) {
+.button-col-cta {
+    justify-content: flex-start;
+    gap: 15px;
+  }
+  h1.text-4xl.font-bold.text-center.text-indigo-800.mb-2.calc_01
+  {
+    font-size: 25px;    
+  }
+  .min-h-screen.bg-gradient-to-br.from-blue-50.py-8.px-4.mo-p-0 {
+    padding: 0 !important;
+  }
+}
 
 @media (max-width: 1279px) {
   .mobile_menu

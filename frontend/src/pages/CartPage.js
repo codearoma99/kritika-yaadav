@@ -363,8 +363,7 @@ const CartPage = () => {
             </div>
           )}
 
-        <div className="container mx-auto px-4 py-8 max-w-6xl">
-          <h1 className="text-3xl font-bold text-gray-800 mb-8">Your Shopping Cart</h1>
+        <div className="container mx-auto px-4 py-8 max-w-6xl pt-5 lg:pt-0">          
           {cartItems.length === 0 ? (
             <div className="bg-gray-50 rounded-lg p-12 text-center">
               <p className="text-lg mb-6">Your cart is empty</p>
@@ -377,7 +376,7 @@ const CartPage = () => {
           ) : (
             <div className="flex flex-col lg:flex-row gap-8">
               {/* Cart Items */}
-              <div className="lg:w-2/3 bg-white rounded-lg shadow-sm p-6">
+              <div className="lg:w-2/3 bg-white rounded-lg shadow-sm p-6 border border-gray-300">
                 <div className="hidden md:grid grid-cols-12 gap-4 pb-4 border-b border-gray-200 text-gray-600 font-medium">
                   <div className="col-span-8">Item</div>
                   <div className="col-span-4 text-right">Price</div>
@@ -421,7 +420,7 @@ const CartPage = () => {
               </div>
 
               {/* Order Summary */}
-              <div className="lg:w-1/3 bg-white rounded-lg shadow-sm p-6 h-fit">
+              <div className="lg:w-2/3 bg-white rounded-lg shadow-sm p-6 border border-gray-300 h-fit">
                 <h2 className="text-xl font-bold text-gray-800 mb-6">Order Summary</h2>
 
                 <div className="space-y-4">
