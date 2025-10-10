@@ -141,14 +141,14 @@ const CourseDetails = () => {
                   Your browser does not support the video tag.
                 </video>
               </div>
-                <div className="video-title p-4">
+                <div className="video-title p-4 mob_vi_ti">
                   <h2 className="text-xl font-semibold">{modules[activeVideo].video_title}</h2>
                 </div>
               </>
             )}
 
             {/* Overview */}
-            <div className="mt-8 bg-white rounded-xl shadow-md p-6">
+            <div className="mt-8 bg-white rounded-xl shadow-md p-6 mp_pt-course0">
               <h2 className="text-2xl font-bold text-gray-800 mb-4">Course Overview</h2>
               <p className="text-gray-600">{course.course_overview}</p>
             </div>

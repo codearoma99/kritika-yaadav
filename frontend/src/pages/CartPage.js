@@ -376,7 +376,7 @@ const CartPage = () => {
           ) : (
             <div className="flex flex-col lg:flex-row gap-8">
               {/* Cart Items */}
-              <div className="lg:w-2/3 bg-white rounded-lg shadow-sm p-6 border border-gray-300">
+              <div className="lg:w-2/3 bg-white rounded-lg shadow-sm p-6 border border-gray-300 mo-pt-pb-01">
                 <div className="hidden md:grid grid-cols-12 gap-4 pb-4 border-b border-gray-200 text-gray-600 font-medium">
                   <div className="col-span-8">Item</div>
                   <div className="col-span-4 text-right">Price</div>
@@ -384,9 +384,9 @@ const CartPage = () => {
 
                 {cartItems.map(item => (
                   <div key={item.id} className="grid grid-cols-12 gap-4 py-6 border-b border-gray-100">
-                    <div className="col-span-12 md:col-span-8 flex items-start gap-4">
+                    <div className="col-span-12 md:col-span-8 flex items-start gap-4 bo_btn1">
                       {item.type === 'ebook' ? (
-                        <div className="w-20 h-20 flex items-center justify-center bg-gray-100 rounded-md text-blue-600 text-3xl">
+                        <div className="w-20 h-20 flex items-center justify-center rounded-md text-blue-600 text-3xl js-start1">
                           <i className="fa-solid fa-book-open"></i>
                         </div>
                       ) : (
@@ -420,7 +420,7 @@ const CartPage = () => {
               </div>
 
               {/* Order Summary */}
-              <div className="lg:w-2/3 bg-white rounded-lg shadow-sm p-6 border border-gray-300 h-fit">
+              <div className="lg:w-2/3 bg-white rounded-lg shadow-sm p-6 border border-gray-300 h-fit ">
                 <h2 className="text-xl font-bold text-gray-800 mb-6">Order Summary</h2>
 
                 <div className="space-y-4">

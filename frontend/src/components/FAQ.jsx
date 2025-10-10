@@ -167,7 +167,7 @@ const FAQAccordion = () => {
       {/* Main Content */}
       <div className="faq-content">
         <div className="faq-header">
-          <h1>Frequently Asked Questions</h1>
+          <h1 className='text-4xl font-bold text-center text-indigo-800 mb-2 calc_01'>Frequently Asked Questions</h1>
           <p>Find answers to common questions about our platform</p>
         </div>
         

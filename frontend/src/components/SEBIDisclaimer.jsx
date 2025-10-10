@@ -7,7 +7,7 @@ const SEBIDisclaimer = () => {
         <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-200">
           {/* Header */}
           <div className="text-center mb-8">
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-2">
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-2 mobile_ft">
               SEBI compliant disclaimer
             </h2>
             <p className="text-lg text-gray-600">

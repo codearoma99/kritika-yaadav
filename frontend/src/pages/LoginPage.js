@@ -84,7 +84,7 @@ const LoginPage = () => {
         <div className="w-full max-w-md">
           <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
             <div className="bg-gradient-to-r from-indigo-600 to-purple-600 py-6 px-8 text-center">
-              <h2 className="text-3xl font-bold text-white">Welcome Back</h2>
+              <h2 className="text-3xl font-bold text-white mobile_ft">Welcome Back</h2>
               <p className="text-indigo-100 mt-2">Sign in to your account</p>
             </div>
 

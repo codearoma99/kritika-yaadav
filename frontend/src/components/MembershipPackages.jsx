@@ -47,7 +47,7 @@ const MembershipPackages = () => {
     >
       <div className="text-center mb-12 heading1">
         <h5 data-aos="fade-left" data-aos-duration="800">MEMBERSHIP SYSTEM</h5><br />
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-0">
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-0 second_mb1">
           Stock Market Learning Packages for Every Skill Level
         </h2>
       </div>

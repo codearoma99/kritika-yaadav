@@ -213,7 +213,7 @@ const InvestmentCalculator = () => {
   return (
     <div className="min-h-screen py-8 px-4">
       <div className="max-w-6xl mx-auto">
-        <h1 className="text-4xl font-bold text-center text-indigo-800 mb-2">Investment Calculator</h1>
+        <h1 className="text-4xl font-bold text-center text-indigo-800 mb-2 calc_01">Investment Calculator</h1>
         <p className="text-center text-gray-600 mb-8">Plan your investments with our SIP and Lumpsum calculators</p>
         
         {/* Tab Navigation */}
