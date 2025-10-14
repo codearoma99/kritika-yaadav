@@ -1,0 +1,30 @@
+@media (max-width: 767px) 
+{
+    header.bg-white.shadow.px-6.py-4.flex.justify-between.items-center {
+    padding: 5px 17px !important;
+    margin: 0 !important;
+    }
+    .fix_width1
+    {
+        width: 88%;
+    }
+
+    .flex.justify-between.items-center.mb-6.mobile_part1 
+    {
+        flex-wrap: wrap;
+        font-size: 13px;
+    }
+
+    .btn_Add1
+    {
+        flex-direction: column;
+    }
+    td.px-6.py-4.whitespace-nowrap {
+    padding: 3px !important;
+    }
+}
+@media (max-width: 400px) {
+    .fix_width1 {
+        width: 45%;
+    }
+}

@@ -1,23 +1,37 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
-import { useEffect } from 'react';
 
 
-const AdminSidebar = () => {
+const AdminSidebar = ({ isOpen }) => {
   const navigate = useNavigate();
+   const sidebarRef = useRef(null);
+  // const navigate = useNavigate();
+  const location = useLocation();
 
   useEffect(() => {
     const isLoggedIn = localStorage.getItem('adminLoggedIn');
     if (isLoggedIn !== 'true') {
       navigate('/admin/login');
     }
+
+    // Handler to close sidebar if click is outside
+    const handleClickOutside = (event) => {
+      if (sidebarRef.current && !sidebarRef.current.contains(event.target)) {
+        sidebarRef.current.style.left = '0';
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
   }, [navigate]);
 
-  const location = useLocation();
+  // const location = useLocation();
 
   return (
-    <aside className="admin-sidebar">
+      <aside className="admin-sidebar" ref={sidebarRef}>
       <div className="sidebar-header">
         <h2 className="sidebar-title">Admin Panel</h2>
       </div>
@@ -167,86 +181,106 @@ export default AdminSidebar;
 // Add this to your CSS file or styled-components
 const styles = `
   .admin-sidebar {
-    width: 260px;
-    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
-    color: white;
-    height: 100vh;
+  width: 260px;
+  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+  color: white;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0; /* Default hidden */
+  z-index: 1000;
+  box-shadow: 4px 0 10px rgba(0, 0, 0, 0.1);
+  transition: left 0.3s ease-in-out, transform 0.3s ease-in-out; /* Smooth animation */
+  overflow-y: auto;
+}
+
+
+.sidebar-header {
+  padding: 1.5rem 1.5rem 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sidebar-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+  background: linear-gradient(to right, #818cf8, #a5b4fc);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.sidebar-nav {
+  padding: 1rem 0;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  padding: 0.8rem 1.5rem;
+  margin: 0.25rem 1rem;
+  color: #cbd5e1;
+  text-decoration: none;
+  border-radius: 0.375rem;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  background: rgba(255, 255, 255, 0.05);
+  color: #e2e8f0;
+  transform: translateX(5px);
+}
+
+.nav-link.active {
+  background: linear-gradient(90deg, rgba(99, 102, 241, 0.2) 0%, rgba(99, 102, 241, 0) 100%);
+  color: #ffffffff;
+  border-left: 3px solid #ffffffff;
+}
+
+.nav-link.active .nav-icon {
+  color: #818cf8;
+}
+
+.nav-icon {
+  margin-right: 0.75rem;
+  width: 20px;
+  text-align: center;
+  color: #ffffffff;
+  transition: all 0.3s ease;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .admin-sidebar {
+    transform: translateX(-100%);
+    position: fixed;
+    z-index: 9999; /* Very high z-index for mobile */
+    width: 280px; /* Slightly wider for mobile */
+  }
+
+  .admin-sidebar.open {
+    transform: translateX(0);
+    box-shadow: 4px 0 15px rgba(0, 0, 0, 0.3); /* Stronger shadow when open */
+  }
+  
+  /* Optional: Add overlay when sidebar is open */
+  .sidebar-overlay {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 100;
-    box-shadow: 4px 0 10px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-    overflow-y: auto;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 9998;
+    display: none;
   }
-
-  .sidebar-header {
-    padding: 1.5rem 1.5rem 1rem;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  
+  .sidebar-overlay.open {
+    display: block;
   }
+}
 
-  .sidebar-title {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: #fff;
-    margin: 0;
-    background: linear-gradient(to right, #818cf8, #a5b4fc);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-
-  .sidebar-nav {
-    padding: 1rem 0;
-  }
-
-  .nav-link {
-    display: flex;
-    align-items: center;
-    padding: 0.8rem 1.5rem;
-    margin: 0.25rem 1rem;
-    color: #cbd5e1;
-    text-decoration: none;
-    border-radius: 0.375rem;
-    transition: all 0.3s ease;
-  }
-
-  .nav-link:hover {
-    background: rgba(255, 255, 255, 0.05);
-    color: #e2e8f0;
-    transform: translateX(5px);
-  }
-
-  .nav-link.active {
-    background: linear-gradient(90deg, rgba(99, 102, 241, 0.2) 0%, rgba(99, 102, 241, 0) 100%);
-    color: #ffffffff;
-    border-left: 3px solid #ffffffff;
-    
-  }
-
-  .nav-link.active .nav-icon {
-    color: #818cf8;
-  }
-
-  .nav-icon {
-    margin-right: 0.75rem;
-    width: 20px;
-    text-align: center;
-    color: #ffffffff;
-    transition: all 0.3s ease;
-  }
-
-  /* Responsive adjustments */
-  @media (max-width: 768px) {
-    .admin-sidebar {
-      transform: translateX(-100%);
-      width: 280px;
-    }
-
-    .admin-sidebar.open {
-      transform: translateX(0);
-    }
-  }
 `;
 
 // Add the styles to the head (you might want to use a CSS-in-JS solution instead)

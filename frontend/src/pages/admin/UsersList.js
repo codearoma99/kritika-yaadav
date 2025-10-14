@@ -139,14 +139,14 @@ const UsersList = () => {
   };
 
   return (
-    <div className="min-h-screen flex bg-gray-100">
+    <div className="min-h-screen flex bg-gray-100 ">
       <AdminSidebar />
 
       <div className="flex flex-col flex-1 md:ml-64">
         <HeaderAdmin />
 
-        <main className="flex-grow p-6 bg-gray-100">
-          <div className="flex justify-between items-center mb-6">
+        <main className="flex-grow p-6 bg-gray-100 fix_width1">
+          <div className="flex justify-between items-center mb-6 mobile_part1">
             <h1 className="text-2xl font-bold text-gray-800 flex items-center">
               <FontAwesomeIcon icon={faUsers} className="mr-2 text-indigo-600" />
               Users Management

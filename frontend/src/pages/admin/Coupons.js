@@ -345,13 +345,13 @@ const Coupons = () => {
       <AdminSidebar />
       <div className="flex flex-col flex-1 md:ml-64">
         <HeaderAdmin />
-        <main className="flex-grow p-6 bg-gray-100">
-          <div className="flex justify-between items-center mb-6">
+        <main className="flex-grow p-6 bg-gray-100 fix_width1">
+          <div className="flex justify-between items-center mb-6 mobile_part1">
             <h1 className="text-2xl font-bold text-gray-800 flex items-center">
               <FontAwesomeIcon icon={faTicketAlt} className="mr-2 text-indigo-600" />
               Coupons Management
             </h1>
-            <div className="flex gap-2">
+            <div className="flex gap-2 btn_Add1">
               <button
                 onClick={() => {
                   resetForm();

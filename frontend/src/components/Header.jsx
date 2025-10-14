@@ -256,6 +256,8 @@ const Header = () => {
             </nav>
           </div>
 
+
+
           {/* Mobile Menu Button */}
           <div className="xl:hidden w-1/4 text-right">
             <button
@@ -272,8 +274,8 @@ const Header = () => {
 
         {/* Mobile Menu Dropdown */}
         {isMenuOpen && (
-          <div className="xl:hidden bg-white rounded-lg mt-2 py-4 shadow-lg border border-gray-200">
-            <nav>
+          <div className="xl:hidden bg-white rounded-lg mt-2 py-4 shadow-lg border border-gray-200 ">
+            <nav className="mobile_menubar">
               <ul className="flex flex-col space-y-3 px-4">
                 <li><Link to="/" onClick={toggleMenu} className="block py-2 text-gray-800 hover:text-indigo-600">Home</Link></li>
                 <li><Link to="/about" onClick={toggleMenu} className="block py-2 text-gray-800 hover:text-indigo-600">About Us</Link></li>
@@ -370,6 +372,17 @@ const Header = () => {
             </nav>
           </div>
         )}
+
+        <li className="relative d-1279_show">
+            <Link to="/cart" className="block text-gray-800 transition">
+              <FontAwesomeIcon icon={faShoppingCart} className="mr-3" />
+              {cartCount > 0 && (
+                <span className="absolute top-0 right-0 bg-red-600 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">
+                  {cartCount}
+                </span>
+              )}
+            </Link>
+          </li>
       </div>
     </header>
   );
